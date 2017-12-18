@@ -1,0 +1,95 @@
+.wrap {
+  width: 750px;
+  font-size: 30px;
+  background-color: #fff;
+  color: #484848;
+  position: relative;
+
+  .cont {
+    // border-top: 1px solid #c6c8c9;
+    margin-top: 100px;
+
+    .title {
+      font-size: 35px;
+      font-weight: 600;
+      margin: 10px 20px;
+
+      i {
+        display: inline-block;
+        width: 5px;
+        height: 30px;
+        background-color: red;
+        margin-right: 5px;
+      }
+    }
+
+    .interval {
+      height: 8px;
+      background-color: #f5f5f9;
+    }
+
+    .myApp {
+      padding: 7px;
+      overflow: hidden;
+      border-bottom: 1px solid #c6c8c9;
+
+      img {
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+
+      span {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+      }
+
+      div {
+        display: inline-block;
+        float: right;
+
+        span {
+          color: red;
+          display: inline-block;
+          padding: 2px 7px;
+          border: 1px solid red;
+          border-radius: 10%;
+          margin-left: 9px;
+        }
+      }
+    }
+
+    .foryou {
+      position: relative;
+      width: 100%;
+      overflow-x: auto;
+      height: 170px;
+      overflow-y: visible;
+      // -webkit-backface-visibility: hidden;
+      // -webkit-transform: translate3d(0, 0, 0);
+      -webkit-overflow-scrolling: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      ul {
+        height: 170px;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 5px;
+        // -webkit-backface-visibility: hidden;
+        // -webkit-transform: translate3d(0, 0, 0);
+
+        li {
+          float: left;
+          padding: 0 5px;
+        }
+      }
+    }
+  }
+}
